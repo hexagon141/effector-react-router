@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10bb3a58-31b4-4615-823b-9c2e2aba4a1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/effector-react-router/create-router.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/effector-react-router/navigate.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/effector-react-router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/effector-react-router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/effector-react-router/modules/link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/effector-react-router/link.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577179184155</updated>
       <workItem from="1577179186860" duration="6764000" />
-      <workItem from="1578131039037" duration="15013000" />
+      <workItem from="1578131039037" duration="15381000" />
     </task>
     <servers />
   </component>

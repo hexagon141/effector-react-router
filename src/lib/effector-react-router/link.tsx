@@ -1,5 +1,5 @@
 import React, { FunctionComponent, MouseEvent, useCallback } from 'react';
-import { navigate } from "../index";
+import { navigate } from './navigate';
 
 export const Link: FunctionComponent<{ to: string }> = ({ children, to }) => {
   const handleClick = useCallback((event: MouseEvent<HTMLElement>) => {
@@ -10,6 +10,11 @@ export const Link: FunctionComponent<{ to: string }> = ({ children, to }) => {
   }, [to]);
 
   return (
-    <a href={to} onClick={handleClick}>{children}</a>
+    <a
+      href={to}
+      onClick={handleClick}
+    >
+      {children}
+    </a>
   )
 };

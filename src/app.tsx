@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { useStore } from "effector-react";
 import { $route } from './router';
-import { Link } from "./lib/effector-react-router/modules/link";
+import { Link } from "./lib/effector-react-router/link";
 
 
 export const App: FunctionComponent = () => {
