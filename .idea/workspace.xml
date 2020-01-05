@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10bb3a58-31b4-4615-823b-9c2e2aba4a1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/effector-react-router/history.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/effector-react-router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/effector-react-router/match-url.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/effector-react-router/modules/link.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/article/create.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/article/edit.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/article/read.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/effector-react-router/create-router.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/effector-react-router/navigate.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/effector-react-router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/effector-react-router/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577179184155</updated>
       <workItem from="1577179186860" duration="6764000" />
-      <workItem from="1578131039037" duration="13676000" />
+      <workItem from="1578131039037" duration="15013000" />
     </task>
     <servers />
   </component>
