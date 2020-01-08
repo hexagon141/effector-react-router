@@ -1,14 +1,22 @@
 import React, { FunctionComponent, MouseEvent, useCallback, memo } from 'react';
-import { navigate } from './navigate';
+import { history } from './history';
+import { stringifyQuery } from './query-string';
 
-export const Link: FunctionComponent<{ pathname: string, className: string }> = memo(
-  ({ children, pathname, className }) => {
+export const Link: FunctionComponent<{
+  pathname: string,
+  search?: {
+    [key: string]: any
+  },
+  className?: string
+}> = memo(
+  ({ children, pathname, search = {}, className }) => {
     const handleClick = useCallback(
       (event: MouseEvent<HTMLElement>) => {
         event.preventDefault();
-        navigate({
-          pathname
-        })
+        history.push({
+          pathname,
+          search: stringifyQuery(search)
+        });
       },
       [pathname]
     );

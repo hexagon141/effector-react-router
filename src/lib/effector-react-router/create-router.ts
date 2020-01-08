@@ -1,38 +1,35 @@
-import { ReactNode } from 'react';
 import { createStore } from 'effector';
-import { history } from './history';
+import { $location } from './navigation';
 import { matchUrl } from './match-url';
-import { navigate, Path } from './navigate';
 
 type Route = {
   pathname: string,
-  component: ReactNode,
+  view: any,
 }
 
-export function createRouter(routes: Route[]) {
-  const $location = createStore<Path>({
-    pathname: history.location.pathname,
-  });
+export const createRouter = (routes: Route[]) => {
+  const $page = $location.map(location => {
+    const matched = routes.find(route => matchUrl({
+      pathname: route.pathname,
+      url: location.pathname,
+    }));
 
-  const $route = $location.map<ReactNode | null>(path => {
-    if (path) {
-      const matched = routes.find(route => matchUrl(route.pathname, path.pathname));
-
-      if (matched) return matched.component;
-      return null
+    if (matched) {
+      return {
+        view: matched.view,
+        pathname: location.pathname,
+        params: matchUrl({
+          pathname: matched.pathname,
+          url: location.pathname,
+        }),
+        search: location.search
+      }
     }
+
     return null
   });
 
-  $location.on(navigate, (_, path): Path => path);
-
-  $location.watch(location => {
-    if (location) {
-      history.push(location.pathname);
-    }
-  });
-
   return {
-    $route
+    $page
   }
-}
+};

@@ -23,6 +23,8 @@ export const matchUrl = ({ pathname, url }: MatchUrl): MatchUrlResult => {
 
   let params: { [key: string]: string } = {};
 
+  // pattern.exec() return [url, ...params]
+  // so we start loop from 1 index
   for (let key = 1; key < match.length; key++) {
     if (match[key]) {
       params = {
@@ -34,8 +36,3 @@ export const matchUrl = ({ pathname, url }: MatchUrl): MatchUrlResult => {
 
   return params;
 };
-
-matchUrl({
-  pathname: '/article/:id/:type/:anything',
-  url: '/article/1488/type-dev/anything-dimgo'
-});

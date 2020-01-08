@@ -1,20 +1,20 @@
-import React from 'react';
 import { createRouter } from './lib/effector-react-router';
-import { ReadArticle } from './pages/article/read';
 import { CreateArticle } from './pages/article/create';
+import { ReadArticle } from './pages/article/read';
 import { EditArticle } from './pages/article/edit';
+import React from 'react';
 
-export const { $route } = createRouter([
+export const { $page } = createRouter([
   {
     pathname: '/article/create',
-    component: <CreateArticle />
+    view: <CreateArticle />
   },
   {
     pathname: '/article/:id',
-    component: <ReadArticle />
+    view: <ReadArticle />
   },
   {
     pathname: '/article/:id/edit',
-    component: <EditArticle />
+    view: <EditArticle />
   }
 ]);
