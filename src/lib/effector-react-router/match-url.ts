@@ -1,13 +1,10 @@
 import { pathToRegexp } from 'path-to-regexp';
 
-type MatchUrl = {
-  pathname: string,
-  url: string,
-}
+let cache: { [key: string]: any } = {};
 
-type MatchUrlResult = { [key: string]: string } | null
+export const matchUrl = ({ pathname, url }: { pathname: string, url: string }): { [key: string]: string } | null => {
+  if (url in cache) return cache[url];
 
-export const matchUrl = ({ pathname, url }: MatchUrl): MatchUrlResult => {
   const keys: {
     name: string,
     prefix: string,
@@ -33,6 +30,8 @@ export const matchUrl = ({ pathname, url }: MatchUrl): MatchUrlResult => {
       }
     }
   }
+
+  cache[url] = params;
 
   return params;
 };

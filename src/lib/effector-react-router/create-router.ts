@@ -1,4 +1,3 @@
-import { createStore } from 'effector';
 import { $location } from './navigation';
 import { matchUrl } from './match-url';
 
